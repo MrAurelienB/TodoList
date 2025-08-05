@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.MainPageHeader {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.MainPageContent {
+    display: flex;
+    flex: 1;
+}
+
+.MainItemList {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.progress-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    gap: 15px;
+}
+
+.task-count-done {
+    font-weight: bold;
+    color: #4CAF50;
+    white-space: nowrap;
+    min-width: 50px; /* pour que le texte ne réduise pas trop */
+    text-align: right;
+}
+
+.task-count-todo {
+    font-weight: bold;
+    white-space: nowrap;
+    min-width: 50px;
+    text-align: left;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 12px;
+    background-color: #eee;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.progress-done {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 60%; /* ici ta progression dynamique */
+    transition: width 0.3s ease;
+}
