@@ -1,3 +1,5 @@
+import {TaskListHandler} from './src/TaskListHandler.js';
+
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
@@ -10,10 +12,19 @@ let doneCount = getRandomInt(10);
 let todoCount = getRandomInt(10) + 1;
 const totalTaskCount = doneCount + todoCount;
 
-let mainPageContent = document.getElementById('MainPageContent');
-console.log(mainPageContent)
+const taskListHandler = new TaskListHandler();
 
-const listNames = ['Aujourd\'hui', 'Cette semaine', 'Ce mois-ci', 'Plus tard'];
+
+/**
+ * IDEAS
+ * 
+ * 
+ * stats globale: number of tasks done this day, week, month, all time
+ */
+
+
+/*
+const listNames = ['En retard', 'Aujourd\'hui', 'Cette semaine', 'Ce mois-ci', 'Plus tard'];
 for (let listName of listNames){
     const listDiv = document.createElement('div');
     listDiv.classList.add('MainItemList');
@@ -64,3 +75,4 @@ for (let listName of listNames){
         listDiv.appendChild(itemDiv);
     }
 }
+*/

@@ -15,12 +15,31 @@ body {
     flex: 1;
 }
 
-.MainItemList {
+.TaskList {
     flex: 1;
     padding: 20px;
     border: 1px solid #ccc;
     box-sizing: border-box;
     text-align: center;
+}
+
+.TaskListHeader {
+    padding-bottom: 15px;
+}
+
+.Task {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex: 1;
+}
+
+.TaskName {
+    padding-left: 15px;
+}
+
+.TaskCheckbox {
+    padding-left: 10px;
 }
 
 .progress-wrapper {
